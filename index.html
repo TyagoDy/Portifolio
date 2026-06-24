@@ -3,30 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Tyago_Dy</title>
-  </head>
-  <body>
+</head>
+<body>
+    <div class="interactive-bg"></div>
 
-    <section class="Main bar">
-        <img src="Images/images.jpg" alt="Sponjebob" height="50" width="50">
-        <a href="https://github.com/TyagoDy" target="_blank">Github</a> |
-        <a href="#aboutme">Sobre</a> |
-        <a href="">Skils</a> |
-        <a href="">Projetos</a> |
-        <a href="">Contato</a> |
-    </section>
-
-    <section class="hero-section">
-        <p>print:</p>
-        <h1>Tyago_Dy</h1>
-        <p>Web-dev | Estudande ADS | Fluente em Inglês</p>
-
-        <div class="Buttons">
-            <a href="">Entrar em contato</a>
-            <a href=""><b>Ver Projetos</b></a>
+    <main class="main-hero">
+    <div class="Main_bar">
+        <nav class="nav-links">
+                <a href="https://github.com/TyagoDy" target="_blank">Github</a>
+                <a href="#aboutme">Sobre</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button class="theme-toggle">
+                ⏾
+            </button>
+    </div>
+            
+    <div class="hero-section">
+            <div class="title-wrapper">
+            <span class="title_print">print :</span>
+            <h1 class="Title_hero">Tyago_Dy</h1>
         </div>
+        
+        <p>Web-dev | Estudante ADS | Fluente em Inglês</p>
 
-    </section>
+        <div class="button-wrapper">
+            <button class = "btn-22" href="#">Entrar em contato</button>
+            <button class="btn-98" href="#">Ver Projetos</button>
+            </div>
+        </main>
 
     <section id="aboutme" class="About">
         <div class="About_me">
@@ -38,7 +50,30 @@
             <hr>
             Nas horas vagas, dedico-me ao estudo aprofundado de Python e desenvolvimento web moderno, trabalhando em projetos pessoais que variam de pequenas utilidades a aplicações web completas. Essa prática constante me permite aplicar imediatamente os conceitos aprendidos e construir um portfólio sólido.</p>
         </div>
+
+        <address class="info">
+            <p>Nome: Tiago Domingos V Silva</p>
+            <p>Contato: tiggas5423@gmail.com</p>
+            <p>Formação: ADS (em andamento)</p>
+            <p>Idiomas: Inglês (fluente), português (nativo)</p>
+            <p>stack: Python, HTML, CSS, JavaScript</p>
+            <p>info</p>
+        </address>
     </section>
 
+    <section id="projects" class="Projects">
+        <h2>Projetos</h2>
+        <p>Lista de projetos desenvolvidos.</p>
+    </section>
+
+    <section id="contact" class="Contact">
+        <p>email: tiggas5423@gmail.com</p>
+        <p>github: https://github.com/TyagoDy</p>
+        <p>telegram: @TyagoDy</p>
+        <p>localização: Contagem, Minas Gerais, Brasil</p>
+    </section>
+
+
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
