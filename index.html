@@ -34,14 +34,15 @@
                 <h1 class="Title_hero">Tyago_Dy</h1> 
             </div>
         
-            <p>Web-dev | Estudante ADS | Fluente em Inglês</p>
+            <p> Web-dev | Estudante ADS | Fluente em Inglês</p>
 
             <div class="button-group">
-                <button class = "btn-50" href="#">Entrar em contato</button>
+                <a class = "btn-50" href="#contact">Entrar em contato</a>
                 <button class="btn-98" href="#">Ver Projetos</button>
             </div>
             
         </main>
+
         <section id="aboutme " class="About hidden-reveal">
             <div class="About_me">
                 <h2 class="About_me_title">Quem sou eu?</h2>
@@ -65,46 +66,92 @@
         </section>  
         
         <section id="projects" class="Projects hidden-reveal">
-            <div class="Projects_title">
-                <h2 class="section-title">Projetos</h2>
+        <h2 class="section-title">Projetos { }</h2>
+        
+        <div class="project-grid">
+            
+            <div class="Block">
+                <h3>Sistema de RH / Assistente</h3>
+                <p>Plataforma para gestão e assistência de colaboradores, otimizando o fluxo de administração de funcionários.</p>
+                <div class="card-footer">
+                    <div class="tech-tags">
+                        <span class="tech-pill">Python</span>
+                    </div>
+                    <a href="https://github.com/TyagoDy" target="_blank" class="project-link">GitHub ↗</a>
+                </div>
             </div>
 
-        <li class="Block">
-            <h3>Automação Residencial</h3>
-            <p>Configuração e integração de um sistema de controle remoto para portões. Projeto prático lidando com hardware e atualização de acesso.</p>
-            
-            <a href="https://github.com/TyagoDy" target="_blank" class="project-link">Ver no GitHub ↗</a>
-        </li>
+            <div class="Block">
+                <h3>Barbearia Project</h3>
+                <p>Sistema completo de agendamento e gerenciamento para barbearias, focado na experiência do cliente e do barbeiro.</p>
+                <div class="card-footer">
+                    <div class="tech-tags">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                    </div>
+                    <a href="https://github.com/TyagoDy/Barbearia_Project" target="_blank" class="project-link">GitHub ↗</a>
+                </div>
+            </div>
 
-        <li class="Block">
-            <h3>Resolução de Algoritmos</h3>
-            <p>Repositório no GitHub focado em soluções contínuas de desafios de lógica de programação utilizando plataformas como Exercism e Codewars.</p>
-            
-            <a href="https://github.com/TyagoDy" target="_blank" class="project-link">Ver no GitHub ↗</a>
-        </li>
+            <div class="Block">
+                <h3>Meu Portfólio</h3>
+                <p>Este portfólio pessoal construído do zero, focando em design moderno de UI, responsividade e efeito Liquid Glass.</p>
+                <div class="card-footer">
+                    <div class="tech-tags">
+                        <span class="tech-pill">JS</span>
+                        <span class="tech-pill">CSS</span>
+                    </div>
+                    <a href="https://github.com/TyagoDy/Portifolio" target="_blank" class="project-link">GitHub ↗</a>
+                </div>
+            </div>
 
-        <li class="Block">
-            <h3>Knowledge Base</h3>
-            <p>Estruturação de um sistema de anotações e documentação técnica sincronizada, utilizando o Obsidian para gestão do conhecimento de código.</p>
-            
-            <a href="https://github.com/TyagoDy" target="_blank" class="project-link">Ver no GitHub ↗</a>
-        </li>
+            <div class="Block see-more-block">
+                <h3>Explorar Mais</h3>
+                <p>Veja todos os meus repositórios, experimentos de código e contribuições ativas.</p>
+                <a href="https://github.com/TyagoDy" target="_blank" class="see-more-btn">
+                    Ir para o GitHub ➔
+                </a>
+            </div>
 
-        <li class="Block">
-            <h3>Projeto ADS</h3>
-            <p>Aplicação web em desenvolvimento contínuo como parte prática das disciplinas do curso de Análise e Desenvolvimento de Sistemas.</p>
-            
-            <a href="https://github.com/TyagoDy" target="_blank" class="project-link">Ver no GitHub ↗</a>
-        </li>
+        </div>
+    </section>
         
+    <section id="contact" class="Contact hidden-reveal">
         
-        <section id="contact" class="Contact hidden-reveal">
-            <p>email: tiggas5423@gmail.com</p>
-            <p>github: https://github.com/TyagoDy</p>
-            <p>telegram: @TyagoDy</p>
-            <p>localização: Contagem, Minas Gerais, Brasil</p>
-        </section>
+        <div class="Block contact-id-card">
+            <div class="contact-left">
+                <h2 class="section-title">Vamos conversar</h2>
+                <p>Disponível para contato profissional, ou colaborações.</p>
+                
+                <div class="location-badge">
+                    <span> Contagem, MG — Brasil</span>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <a href="mailto:tiggas5423@gmail.com" class="contact-row">
+                    <span class="row-label">✉ Email</span>
+                    <span class="row-value">tiggas5423@gmail.com ↗</span>
+                </a>
+                
+                <a href="https://github.com/TyagoDy" target="_blank" class="contact-row">
+                    <span class="row-label"><> GitHub</span>
+                    <span class="row-value">/TyagoDy ↗</span>
+                </a>
+                
+                <a href="https://t.me/@Tyago_Dy" target="_blank" class="contact-row">
+                    <span class="row-label"> Telegram</span>
+                    <span class="row-value">@TyagoDy ↗</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
         
+    <footer class="footer">
+        <p>feito com Love por Tyago_Dy • { 2026 }</p>
+    </footer>
 
     <script src="/scripts/main.js"></script>
   </body>
