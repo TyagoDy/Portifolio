@@ -1,30 +1,15 @@
-const root = document.documentElement;
-
-
-let targetX = window.innerWidth / 2; 
-let targetY = window.innerHeight / 2;
-
-// Where the glow CURRENTLY is
-let currentX = window.innerWidth / 2;
-let currentY = window.innerHeight / 2;
-
-const ease = 0.08; 
-
-document.addEventListener('pointermove', (event) => {
-  targetX = event.clientX;
-  targetY = event.clientY;
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-reveal');
+            
+            observer.unobserve(entry.target); 
+        }
+    });
+}, {
+    threshold: 0.15 
 });
 
-function animate() {
+const hiddenElements = document.querySelectorAll('.hidden-reveal');
 
-  currentX += (targetX - currentX) * ease;
-  currentY += (targetY - currentY) * ease;
-
-
-  root.style.setProperty('--mouse-x', `${currentX}px`);
-  root.style.setProperty('--mouse-y', `${currentY}px`);
-
-  requestAnimationFrame(animate);
-}
-
-animate();
+hiddenElements.forEach((el) => observer.observe(el));
